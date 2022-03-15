@@ -10,7 +10,7 @@ function install-fish-plugins -d "Install the fish plugins that I use (from AUR 
         if pacman -Qi $plugin > /dev/null
             echo "Plugin $plugin already installed"
         else 
-            sudo aura -Akax $plugin
+            paru -Syu $plugin
         end
     
     end
